@@ -1,1 +1,9 @@
-@import "tailwindcss";
+*{
+    font-family: "Roboto", sans-serif;
+}
+h1,h2,h3{
+    font-family: "Bebas Neue", sans-serif;
+}
+.btn-linear-gradient{
+    background: linear-gradient(180.00deg, rgba(164, 188, 70, 1),rgba(132.84, 160.44, 24.73, 1) 100%);
+}

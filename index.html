@@ -9,14 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,
-                wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
+                wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom css -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <!-- header section -->
+    <header class="bg-[#fffbf0] relative">
+      <!-- navbar -->
+      <navbar class="flex justify-between items-center container mx-auto">
+        <img src="./icons/logo.png" alt="" class="w-[225px] h-[31px]" />
+        <ul class="md:flex gap-2 font-semibold items-center hidden">
+          <li>Home</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+        <span class="md:hidden block"><i class="fa-solid fa-bars"></i></span>
+      </navbar>
+      <!-- banner -->
+      <section class="flex justify-between items-center min-h-[75vh] container mx-auto">
+        <div class="hidden md:block">
+          <h2 class="font-bold text-[80px] text-[#fabe4c] md:leading-[75px] lg:leading-[60px] xl:leading-[35px]">
+            Be the Penguins
+          </h2>
+          <h2 class="font-bold text-[80px]">of Winter</h2>
+          <p class="">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="rounded-[10px] mt-[12px] w-[170px] h-[60px] inline-block btn-linear-gradient font-semibold text-white"
+          >
+          <i class="fa-solid fa-cart-shopping"></i>
+            Buy Now
+          </button>
+        </div>
+        <img src="./images/model.png" alt="" />
+      </section>
+      <!-- png image for absolute -->
+       <img src="./icons/icon.png" class="absolute top-px opacity-50 right-1/2" alt="">
+    </header>
   </body>
 </html>
